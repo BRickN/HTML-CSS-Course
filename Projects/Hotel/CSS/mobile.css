@@ -1,0 +1,74 @@
+/* Navbar */
+.navbar .logo {
+    float: none;
+    text-align: center;
+}
+
+.navbar ul,
+.navbar ul li {
+    float: none;
+}
+
+.navbar ul li a {
+    padding: 5px;
+    border-bottom: 1px #444 dotted;
+}
+
+/*
+height: 100% gives the element 100% height of its parent container.
+
+height: auto means the element height will depend upon the height of its children.
+*/
+/* Showcase */
+.showcase{
+    height: auto;
+
+}
+
+.showcase .showcase-content{
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+/* Home info */
+.home-info {
+    height: auto;
+}
+
+.home-info .info-img {
+    float: none;
+    display: none;
+}
+
+.home-info .info-content {
+    float: none;
+    width: 100%;
+}
+
+/* Features */
+.box {
+    /* display inline block leaves very small holes spaces between the boxes */
+    /* display: inline-block; */
+    float: none;
+    width: 100%;
+}
+
+/* About info */
+/* About info */
+.about-info .info-left,
+.about-info .info-right {
+    width: 100%;
+    float: none;
+}
+
+.l-heading{
+    text-align: center;
+}
+
+.about-info .info-right{
+    margin-top: 30px;
+}
+
+/* Contact */
+.contact-info .box{
+    border-bottom: #444 dotted 1px;
+}

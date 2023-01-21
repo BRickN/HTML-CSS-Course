@@ -11,6 +11,7 @@ html,
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.7em;
+
 }
 
 a {
@@ -33,6 +34,7 @@ p {
     margin: auto;
     max-width: 1100px;
     overflow: auto;
+    padding: 0 1rem;
 }
 
 .text-primary {
@@ -64,6 +66,7 @@ p {
 
 .l-heading {
     font-size: 40px;
+    line-height: 1.2;
 }
 
 /* Padding */
@@ -114,7 +117,7 @@ p {
     color: #fff;
 }
 
-.navbar h1 {
+.navbar .logo {
     float: left;
     padding: 20px 0px;
 }
@@ -226,7 +229,7 @@ p {
 
 /* Testimonials */
 .testimonials {
-    height: 600px;
+    height: auto;
     background: url(../img/test-bg.jpg) no-repeat center center/cover;
     padding-top: 100px;
 }
