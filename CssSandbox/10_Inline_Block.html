@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline & Block Styling</title>
+    <!-- Block level elements into inline and vice versa (div, a, p, span etc. See 08_block_inline.html) -->
+    <style>
+        /* default, list items are block level elements. By defining them as inline
+        you can create horizontal lists on the same line */
+
+        ul{
+            background: grey;
+        }
+
+        li {
+            display: inline;
+        }
+
+        li a {
+            padding-right: 20px;
+        }
+
+        /* You cannot margin auto an inline element. It doesn't know its width */
+        img {
+            margin: auto;
+            display: block;
+        }
+
+        /* we need inline block */
+        /* display inline does not support width and margin */
+        .box {
+            border: 1px red solid;
+            background: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 15px;
+            width: 32%;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="#">Technology</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">Fashion</a></li>
+    </ul>
+    <br><br>
+    <img src="/CssSandbox/img/leaf.png" alt="">
+    <img src="/CssSandbox/img/leaf.png" alt="">
+    <br><br>
+    <div class="box">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis sint perspiciatis sit porro ea, tempora
+            dignissimos sequi odio ipsum similique.</p>
+    </div>
+    <div class="box">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis sint perspiciatis sit porro ea, tempora
+            dignissimos sequi odio ipsum similique.</p>
+    </div>
+    <div class="box">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis sint perspiciatis sit porro ea, tempora
+            dignissimos sequi odio ipsum similique.</p>
+    </div>
+</body>
+
+</html>

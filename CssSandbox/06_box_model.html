@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model / Margin & Padding</title>
+    <style>
+        /* CSS Reset: remove all default browser styling */
+        * {
+            margin: 0;
+            padding: 0;
+            /* Prevents padding from making an element bigger.
+            width 500 + 20 padding = width 500.
+            Not width 500 + 20 padding = width 540 */
+            box-sizing: border-box;
+        }
+
+        .box {
+            background: lightgray;
+            border: 2px grey solid;
+            width: 500px;
+
+            /* further down overwrites further up.
+            Top,left,right,bottom will overwrite general padding */
+            padding: 20px;
+            padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            /* padding top right bottom left */
+            padding: 10px 20px 10px 20px;
+            /* padding top/bottom right/left */
+            padding: 10px 20px;
+            /* same for margin */
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h3>Box one</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi iusto aperiam veritatis quia natus quam libero
+            quidem vel veniam architecto.</p>
+    </div>
+    <div class="box">
+        <h3>Box Two</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi iusto aperiam veritatis quia natus quam libero
+            quidem vel veniam architecto.</p>
+    </div>
+</body>
+
+</html>

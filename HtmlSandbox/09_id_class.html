@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div span id and class</title>
+    <style>
+        .card{
+            border: 1px solid #ccc;
+            background: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .enhance{
+            color: yellow;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main-header">
+        <h1>My Website</h1>
+        <p>A site about me</p>
+    </div>
+
+    <ul id="main-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <div id="about" class="card">
+        <h3>About</h3>
+        <p>Lorem ipsum dolor sit <div class="enhance">amet consectetur adipisicing elit. </div>Eligendi dolorem ad blanditiis nostrum incidunt ab
+            adipisci nulla rerum ullam quae. <span class="enhance">Dolor nulla numquam a nostrum corrupti odit</span> nobis. Illum neque non dolore
+            incidunt optio! Dolor esse a sit quidem maxime?</p>
+    </div>
+
+    <div id="contact" class="card">
+        <h3>Contact</h3>
+        <ul>
+            <li>Address: Hello World street 40</li>
+            <li>Phone: +123456789</li>
+            <li>Email: hello@world.com</li>
+        </ul>
+    </div>
+
+    <div id="footer">
+        <p>Copyright &copy; 2023</p>
+    </div>
+</body>
+
+</html>

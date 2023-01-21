@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Style</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #183a70;
+        }
+
+        #container {
+            max-width: 400px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .form-wrap {
+            background: white;
+            padding: 15px 25px;
+            color: #333;
+        }
+
+        .container {
+            box-sizing: border-box;
+            background: white;
+            max-width: 400px;
+            margin: auto;
+            padding: 1px 30px 10px 30px;
+            margin-top: 50px;
+            border-radius: 2px;
+        }
+
+        .container h1 {
+            text-align: center;
+            font-weight: 400;
+            margin-bottom: 16px;
+        }
+
+        .container p {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        /* display inline does not support margin and width */
+        .container label {
+            color: grey;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+
+
+        .container input {
+            margin-top: 5px;
+            width: 100%;
+            height: 2.5em;
+            border: 1px lightgray solid;
+            border-radius: 5px;
+        }
+
+        .container button {
+            width: 100%;
+            height: 2.5em;
+            margin-top: 20px;
+            background: #31b051;
+            border: 1px #31b051 solid;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            padding: 0;
+        }
+
+        .form-wrap button {
+            width: 100%;
+            height: 2.5em;
+            margin-top: 20px;
+            background: #31b051;
+            border: 1px #31b051 solid;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            padding: 0;
+        }
+
+        .terms-text {
+            font-size: 14px;
+            margin-top: 20px;
+        }
+
+        .terms-text a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        .form-footer p {
+            text-align: center;
+            color: white;
+        }
+
+        .form-footer a {
+            color: #31b051;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-wrap">
+
+            <h1>Sign Up</h1>
+            <p>It's free and only takes a minute</p>
+            <form>
+                <label for="first-name">First Name</label><br>
+                <input type="text" name="first-name" id="first-name">
+
+                <label for="last-name">Last Name</label><br>
+                <input type="text" name="last-name" id="last-name">
+
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email">
+
+                <label for="password">Password</label><br>
+                <input type="password" name="password" id="password">
+
+                <label for="confirm-password">Confirm Password</label><br>
+                <input type="password" name="confirm-password" id="confirm-password">
+
+                <button type="submit" class="btn">Sign Up</button>
+
+                <p class="terms-text">By clicking the Sign Up button, you agree to our
+                    <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>
+                </p>
+            </form>
+        </div>
+    </div>
+    <section class="form-footer">
+        <p>Already have an account? <a href="#">Login Here</a></p>
+    </section>
+</body>
+
+</html>
