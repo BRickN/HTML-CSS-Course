@@ -1,0 +1,43 @@
+:root {
+    --primary-color: rgb(91, 91, 255);
+    --secondary-color: rgb(255, 233, 136);
+    --bg-dark-color:#333;
+    --bg-light-color:#f4f4f4;
+    --animation-speed: 1s;
+}
+
+.bg-primary{
+    background-color: var(--primary-color);
+}
+.bg-secondary{
+    background-color: var(--primary-color);
+}
+
+.bg-dark{
+    background-color: var(--bg-dark-color);
+    color: #fff;
+}
+
+.bg-light{
+    background: var(--bg-light-color);
+    color: #333;
+}
+
+.btn {
+    display: inline-block;
+    background: #fff;
+    padding: 20px 30px;
+    margin: 20px 20px;
+    opacity: 1;
+    transition: all .2s ease-in;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #333;
+    color: #fff;
+}
+
+.btn-border:hover{
+    border: 1px #fff solid;
+}
