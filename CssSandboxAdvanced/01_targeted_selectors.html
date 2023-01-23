@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Targeted Selectors</title>
+    <style>
+        /* Every Child */
+        div p {
+            background: #ddd;
+        }
+
+        /* Direct Children */
+        div>p {
+            background: green;
+        }
+
+        /* Directly After The Selected Element*/
+        /* So every p directly after div element */
+        div+p {
+            background: #333;
+            color: #fff;
+        }
+
+        /* By attribute */
+        a[target] {
+            background: #ff0000;
+            color: #fff;
+        }
+
+        /* Specific attribute values */
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            margin-bottom: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <ul>
+            <li>item 1</li>
+            <li>
+                <p>item 2</p>
+            </li>
+            <li>item 3</li>
+        </ul>
+
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <div></div>
+    <li>hi</li>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <div></div>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <a href="#" target="_blank">Page 1</a>
+    <a href="#" target="_self">Page 2</a>
+    <a href="#">Page 3</a>
+
+    <br><br>
+
+    <form action="">
+        <input type="text" name="" id="" placeholder="Name">
+        <input type="email" name="" id="" placeholder="Email">
+        <input type="submit" name="" id="" value="Submit">
+    </form>
+
+
+</body>
+
+</html>
