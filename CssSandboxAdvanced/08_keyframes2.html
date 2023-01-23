@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes 2</title>
+    <style>
+        :root{
+            --animation-speed:0.75s;
+        }
+
+        body {
+            background: #333;
+        }
+
+        .box-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .box {
+            position: absolute;
+            background: #fff;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            animation-timing-function: cubic-bezier(0, 1, 1, 0);
+        }
+
+        .box-move-1 {
+            position: absolute;
+            animation: movehorizontal1 var(--animation-speed) infinite;
+        }
+
+        .box-move-2 {
+            left: 100px;
+            position: absolute;
+            animation: movehorizontal2 var(--animation-speed) infinite;
+        }
+
+        .box-appear {
+            position: absolute;
+            animation: boxappear var(--animation-speed) infinite;
+        }
+
+        .box-disappear {
+            left: 200px;
+            position: absolute;
+            animation: boxdissapear var(--animation-speed) infinite;
+        }
+
+        @keyframes movehorizontal1 {
+            0%{
+                left: 0px;
+            }
+            100% {
+                left: 100px;
+            }
+        }
+
+        @keyframes movehorizontal2 {
+            0%{
+                left: 100px;
+            }
+            100% {
+                left: 200px;
+            }
+        }
+
+        @keyframes boxappear {
+            0% {
+                transform: scale(0);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes boxdissapear {
+            0% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box-container">
+        <div class="box box-appear">
+        </div>
+        <div class="box box-move-1">
+        </div>
+        <div class="box box-move-2">
+        </div>
+        <div class="box box-disappear">
+        </div>
+    </div>
+</body>
+
+</html>

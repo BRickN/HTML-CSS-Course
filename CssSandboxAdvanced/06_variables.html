@@ -11,8 +11,12 @@
             --primary-color: steelblue;
             --secondary-color: skyblue;
             --light-color: #f4f4f4;
+            --max-width: 1100px;
+        }
 
-            --max-width:1100px;
+        .box {
+            --box-1-width: 1;
+            --box-2-width: 2;
         }
 
         * {
@@ -39,9 +43,21 @@
             max-width: var(--max-width);
         }
 
-        
+        .box {
+            background-color: var(--primary-color);
+            border-bottom: 5px var(--secondary-color) solid;
+            color: #fff;
+            padding: 1rem;
+            margin: 1rem;
+        }
 
+        .box-1 {
+            flex: var(--box-1-width);
+        }
 
+        .box-2 {
+            flex: var(--box-2-width);
+        }
     </style>
 </head>
 

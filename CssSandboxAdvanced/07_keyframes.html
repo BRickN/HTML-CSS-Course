@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes</title>
+    <style>
+        body {
+            background: #333;
+        }
+
+        .box {
+            background: #fff;
+            position: relative;
+            width: 200px;
+            height: 200px;
+            /* name | speed |  fill-mode | delay | timing function*/
+             animation: animatewidth 5s forwards 1s ease-in-out;
+            /*animation-name: animatewidth;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            /* animation stays at end position */
+            /* animation-fill-mode: forwards;
+            animation-delay: 1s; */
+            /* reverse the animatin */
+            /*animation-direction: alternate;
+            animation-timing-function: ease-in-out; */
+        }
+
+        @keyframes animatewidth {
+            from {
+                width: 200px;
+                background-color: red;
+                top: 0;
+            }
+
+            to {
+                width: 400px;
+                background-color: blue;
+                top: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+    </div>
+</body>
+
+</html>
