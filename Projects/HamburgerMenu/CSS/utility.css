@@ -1,0 +1,64 @@
+/* Variables */
+:root {
+    /* Colors */
+    --primary-color: rgba(13, 110, 139, 0.75);
+    --secondary-color:rgba(229, 148, 0, 0.9);
+
+    --overlay-color:rgba(24, 39, 51, 0.9);
+
+
+    /* Transitions */
+    --primary-transition: all 0.2s ease-in-out;
+    --menu-speed:0.75s;
+}
+
+/* Basis */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    line-height: 1.4;
+}
+
+.container {
+    max-width: 960px;
+    padding: 0 3rem;
+    margin: auto;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    font-weight: bold;
+    display: inline-block;
+    transition: var(--primary-transition);
+    border-radius: 3px;
+    border: none;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
