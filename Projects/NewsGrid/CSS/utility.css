@@ -34,7 +34,7 @@ a {
 }
 
 p {
-    margin: 1rem 0;
+    margin: .5rem 0;
 }
 
 ul {
@@ -59,9 +59,28 @@ h6 {
 /* Utility */
 .container {
     max-width: var(--max-width);
-    padding: 2rem;
+    padding: 0 2rem;
     margin: auto;
-    overflow: hidden;
+    /* overflow: hidden; */
+}
+
+/* Inner page grid container */
+.page-container {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-gap: 1.5rem;
+    margin: 2rem 0;
+    /* align-items: start; */
+}
+
+.page-container>*:first-child {
+    grid-row: 1 / span 3;
+}
+
+.page-container .sticky-element{
+    position: sticky;
+    top: 125px;
+    align-self: start;
 }
 
 .category {
@@ -114,4 +133,89 @@ h6 {
 
 .btn:hover {
     opacity: 0.9;
+}
+
+.card {
+    background: #fff;
+    padding: 1rem;
+}
+
+/* Backgrounds */
+.bg-dark {
+    background-color: var(--dark-color);
+    color: #fff;
+}
+
+.bg-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.bg-secondary {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.bg-dark h1,
+.bg-dark h2,
+.bg-dark h3,
+.bg-dark h4,
+.bg-dark h5,
+.bg-dark h6,
+.bg-dark a,
+.bg-primary h1,
+.bg-primary h2,
+.bg-primary h3,
+.bg-primary h4,
+.bg-primary h5,
+.bg-primary h6,
+.bg-primary a,
+.bg-secondary h1,
+.bg-secondary h2,
+.bg-secondary h3,
+.bg-secondary h4,
+.bg-secondary h5,
+.bg-secondary h6,
+.bg-secondary a {
+    color: #fff;
+}
+
+/* Padding */
+.py-1 {
+    padding: 1.5rem 0;
+}
+
+.py-2 {
+    padding: 2rem 0;
+}
+
+.py-3 {
+    padding: 3rem 0;
+}
+
+.p-1 {
+    padding: 1.5rem;
+}
+
+.p-2 {
+    padding: 2rem;
+}
+
+.p-3 {
+    padding: 3rem;
+}
+
+.l-heading{
+    font-size: 3rem;
+}
+
+/* List */
+.list li {
+    padding: .5rem;
+    border-bottom: #555 dotted 1px;
+    width: 90%;
+}
+
+.list li a:hover {
+    color: var(--primary-color) !important;
 }
