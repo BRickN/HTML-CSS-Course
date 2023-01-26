@@ -61,7 +61,7 @@ h6 {
     max-width: var(--max-width);
     padding: 0 2rem;
     margin: auto;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 /* Inner page grid container */
@@ -77,11 +77,11 @@ h6 {
     grid-row: 1 / span 3;
 }
 
-.page-container .sticky-element{
+/* .page-container .sticky-element{
     position: sticky;
     top: 125px;
     align-self: start;
-}
+} */
 
 .category {
     display: inline-block;
