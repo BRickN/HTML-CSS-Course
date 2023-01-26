@@ -1,0 +1,26 @@
+(generate package.json file (default settings))
+npm init -y 
+
+(install sass -> will be added as a dependency on package.json)
+npm i node-sass
+
+(to use node-sass you need an npm script. In package.json you can define your scripts)
+npm run ***ScriptName***
+npm run sass
+
+(npm run node-sass -w scss/ -o dist/css/ --recursive)
+(watch scss/ folder, output dist/css/ folder)
+
+
+
+
+
+
+scss files with a _ infront of the name are partials. They wont be compiled as a seperate css file
+but will be compiled in the main.css. If you want seperate css files you need exclude the _
+symbol infront of the scss filename
+
+
+function vs mixin
+function returns something
+mixin is a set of styles you want to include
