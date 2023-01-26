@@ -1,0 +1,3 @@
+SassSandbox/node_modules/
+SassSandbox/scss/
+SassSandbox/*.json
