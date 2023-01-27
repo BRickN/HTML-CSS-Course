@@ -1,0 +1,16 @@
+@import 'variables';
+@import 'base';
+@import 'utilities';
+
+// Header
+#header {
+    &-home {
+        background: $bg-image no-repeat center right/cover;
+        height: 100vh;
+        color: $base-font-color;
+    }
+
+    &-inner {
+        
+    }
+}

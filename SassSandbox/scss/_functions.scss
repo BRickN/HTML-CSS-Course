@@ -1,0 +1,22 @@
+// Set Text Color
+// function vs mixin
+// function returns something
+// mixin is a set of styles you want to include
+
+@function set-text-color($color) {
+    @if(lightness($color) > 50) {
+        @return $dark-text-color;
+    }
+
+    @else {
+        @return $light-text-color;
+    }
+}
+
+// Transform Mixin
+// set of styles you dont want to repeat
+@mixin transform($property) {
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+}
