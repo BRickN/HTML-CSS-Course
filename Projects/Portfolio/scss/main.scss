@@ -1,16 +1,227 @@
 @import 'variables';
 @import 'base';
 @import 'utilities';
+@import 'footer';
+@import 'header_nav';
+@import 'item_grid';
 
-// Header
-#header {
-    &-home {
-        background: $bg-image no-repeat center right/cover;
-        height: 100vh;
-        color: $base-font-color;
+// Home-sections
+#home {
+
+    // Home-Section A Specials
+    &-a {
+        .specials {
+            margin-top: 3rem;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 1rem;
+
+            .fas {
+                color: $main-color;
+                padding-bottom: 0.4rem;
+            }
+        }
     }
 
-    &-inner {
-        
+    // Home-Section B Stats
+    &-b {
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+
+
+            li {
+                line-height: 2;
+
+                &.stats-title {
+                    font-size: 1.5rem;
+                }
+
+                &.stats-number {
+                    font-size: 2rem;
+                    font-weight: bold;
+                }
+            }
+
+            div {
+                padding: 3rem 0;
+
+
+                // even
+                &:nth-child(2n+0) {
+                    background-color: $medium-color;
+                }
+
+                // odd
+                &:nth-child(2n+1) {
+                    background-color: $light-color;
+                }
+            }
+        }
+    }
+
+    // Home-Section C Process
+    &-c {
+
+        & * {
+            box-sizing: content-box;
+        }
+
+        .process {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 1.5rem;
+            text-align: center;
+
+
+            &-icon {
+                background: $dark-color;
+                color: set-text-color($dark-color);
+                border-radius: 50%;
+                padding: 2rem;
+                width: 70px;
+                height: 70px;
+                line-height: 70px;
+                text-align: center;
+                position: relative;
+                transition: all 1s;
+
+                &:hover {
+                    background: $main-color;
+                    color: set-text-color($main-color);
+                    width: 90px;
+                    height: 90px;
+                    line-height: 90px;
+
+                    .process-step {
+                        background-color: $dark-color;
+                        color: set-text-color($dark-color);
+                    }
+                }
+            }
+
+            &-step {
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-size: 28px;
+                background: $main-color;
+                color: set-text-color($main-color);
+                border-radius: 50%;
+                height: 15px;
+                width: 15px;
+                line-height: 15px;
+                padding: 1rem;
+                transition: all 1s;
+                margin: auto;
+            }
+        }
     }
 }
+
+// About Sections
+#about {
+
+    // About A: info
+    &-a {
+        .about-info {
+            display: grid;
+            grid-template-areas:
+                'bioimage bio bio'
+                'aw1 aw2 aw3';
+            grid-gap: 1.2rem;
+        }
+
+        // grid-areas
+        .bio-image {
+            grid-area: bioimage;
+        }
+
+        .bio {
+            grid-area: bio;
+            border-left: 3px solid $main-color;
+        }
+
+        .award {
+            &-1 {
+                grid-area: aw1;
+            }
+
+            &-2 {
+                grid-area: aw2;
+            }
+
+            &-3 {
+                grid-area: aw3;
+            }
+
+            &-1,
+            &-2,
+            &-3 {
+                .fas {
+                    color: $main-color;
+                    margin: 1rem;
+                }
+            }
+        }
+    }
+
+    // About B: Progress Bars
+    &-b {
+        .progress {
+            overflow: hidden;
+            height: 20px;
+            background: $medium-color;
+            border-radius: 5px;
+            margin-bottom: 0.6rem;
+
+            div {
+                height: 100%;
+                color: $light-text-color;
+                text-align: center;
+                background: $main-color;
+            }
+        }
+    }
+
+    // About C: Logos
+    &-c {
+        .about-logos {
+            display: flex;
+
+            img {
+                margin: 2rem;
+                width: 70%;
+            }
+        }
+    }
+
+    &-d {
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 0.5rem;
+
+            ul {
+                list-style: none;
+                margin-top: 1rem;
+                display: flex;
+                align-items: center;
+            }
+
+            p {
+                border: 1px solid $medium-color;
+                border-radius: 5px;
+                padding: 0.5rem;
+            }
+
+            img {
+                width: 50px;
+                height: 50px;
+                border-radius: 5px;
+                margin: 0 0.25rem;
+            }
+        }
+    }
+}
+

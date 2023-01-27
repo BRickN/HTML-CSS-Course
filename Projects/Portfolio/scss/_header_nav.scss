@@ -1,0 +1,67 @@
+
+// Logo
+#logo {
+    width: 70px;
+    height: 70px;
+    color: $light-text-color;
+    text-transform: uppercase;
+}
+
+
+// Main Nav
+#main-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+
+    ul {
+        display: flex;
+    }
+
+    li {
+        padding: 1rem 1.5rem;
+    }
+
+    a {
+        color: $light-text-color;
+        text-transform: uppercase;
+        border-bottom: 3px transparent solid;
+        padding-bottom: 0.5rem;
+        transition: border-color 0.5s ease-in-out;
+
+        &:hover {
+            border-color: $medium-color;
+        }
+
+        &.current {
+            border-color: $main-color;
+        }
+    }
+}
+
+// Header
+#header {
+    &-home {
+        background: $bg-image no-repeat center right/cover;
+        height: 100vh;
+        color: $light-text-color;
+
+        // Header content
+        .header-content {
+            text-align: center;
+            padding-top: 20%;
+
+            h1 {
+                font-size: 4rem;
+                line-height: 1.2;
+            }
+        }
+    }
+
+    // Header inner
+    &-inner {
+        background: $bg-image no-repeat 20% 30%/cover;
+        height: 5.5rem;
+        border-bottom: 3px solid $main-color;
+    }
+}

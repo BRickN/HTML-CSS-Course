@@ -12,7 +12,24 @@ $base-background:#fff;
 // Image
 $bg-image:url('../img/showcase.jpg');
 
-// Font style
+// Font
 $primary-font-family:'Dosis', sans-serif;
-$base-font-color:#fff;
 $base-line-height:1.6;
+
+$dark-text-color:#000;
+$light-text-color:#fff;
+
+// Transition
+$item-grid-transition-speed:cubic-bezier(0.2, 1, 0.3, 1);
+
+// Functions
+// Set Text color
+@function set-text-color($color) {
+    @if(lightness($color) > 50) {
+        @return $dark-text-color;
+    }
+
+    @else {
+        @return $light-text-color;
+    }
+}
