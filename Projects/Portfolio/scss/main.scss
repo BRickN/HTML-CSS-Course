@@ -1,8 +1,8 @@
 @import 'variables';
 @import 'base';
 @import 'utilities';
-@import 'footer';
 @import 'header_nav';
+@import 'footer';
 @import 'item_grid';
 
 // Home-sections
@@ -282,3 +282,5 @@
         }
     }
 }
+
+@import 'media';
